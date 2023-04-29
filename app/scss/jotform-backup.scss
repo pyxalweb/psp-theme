@@ -1,0 +1,155 @@
+.supernova {
+    background-color: transparent;
+}
+
+.jotform-form {
+    padding : 0;
+}
+
+.supernova .form-all,
+.form-all {
+    border: 0;
+    width: 100%;
+    padding: 0;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    color: #000;
+}
+
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    border: 2px solid #EFEFEF;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+@media (max-width: 640px) {
+    .form-section {
+        padding: 0;
+    }
+}
+
+.form-line {
+    margin: 0;
+    padding: 0;
+    padding: 1em;
+}
+
+.form-line.form-line-column {
+    flex: 0 1 48%;
+}
+
+@media (max-width: 640px) {
+    .form-line.form-line-column {
+        flex: 1 1 100%;
+    }
+}
+
+.form-line.form-line-active {
+    background-color: #EFEFEF;
+    border-radius: 1em;
+}
+
+.form-line.form-line-active[data-type="control_button"] {
+    background-color: transparent;
+    padding-top: 0;
+}
+
+.form-line .form-label {
+    margin: 0;
+    padding-left: 1em;
+    float: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    color: #000;
+}
+
+[data-type="control_dropdown"] .form-input-wide {
+    width: 100% !important;
+}
+
+div[data-wrapper-react="true"] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+@media (max-width: 640px) {
+    div[data-wrapper-react="true"] {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-sub-label-container {
+    display: block;
+    margin: 0;
+    width: 100% !important;
+}
+
+.form-textbox,
+.form-textarea,
+.form-dropdown {
+    width: 100% !important;
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 2px #eee inset;
+    font-size: 1rem;
+}
+
+.form-address-table {
+    width: 100%;
+}
+
+.form-address-line-wrapper {
+    display: flex;
+    gap: 1em;
+}
+
+.form-buttons-wrapper {
+    margin: 0;
+}
+
+.form-all .form-submit-button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    text-align: center;
+    display: block;
+    width: fit-content;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    padding-block: 1em;
+    padding-inline: 2.15em;
+    text-decoration: none;
+
+    margin: 0 auto;
+}
+
+.jf-form-buttons {
+    border: none;
+    text-shadow: none;
+    background: #000;
+    transition: all 0.3s;
+}
+
+.jf-form-buttons:hover,
+.jf-form-buttons:focus {
+    background: #CE2724;
+    background-color: #CE2724;
+}

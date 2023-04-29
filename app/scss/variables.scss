@@ -1,0 +1,127 @@
+:root {
+  // ***********************************
+  //  Fonts and Text
+  // ***********************************
+  --root-font-size: 16px;
+
+  --ff-primary: 'Raleway', sans-serif;
+  --ff-secondary: 'Francois One', serif;
+
+  --fs-100: 0.8125rem; // 13
+  --fs-200: 0.875rem; // 14
+  --fs-300: 0.9375rem; // 15
+  --fs-400: 1rem; // 16
+  --fs-500: 1.125rem; // 18
+  --fs-600: 1.25rem; // 20
+  --fs-700: 1.375rem; // 22
+  --fs-800: 1.5rem; // 24
+  --fs-900: 1.625rem; // 26
+  --fs-1000: 2.375rem; // 38
+  --fs-1100: 3rem; // 38
+  --fs-1200: 6rem; // 96
+
+  --fw-regular: 400; // regular
+  --fw-medium: 500; // medium
+  --fw-semi-bold: 600; // semi-bold
+  --fw-bold: 700; // bold
+  --fw-extra-bold: 800; // extra-bold
+
+  --lh-100: 0.75;
+  --lh-200: 1;
+  --lh-300: 1.25;
+  --lh-400: 1.5;
+  --lh-500: 2;
+
+  --box-shadow-400: 1px 1px 5px rgb(0 0 0 / 0.175);
+  --box-shadow-300: 0px 3px 5px rgb(0 0 0 / 0.1);
+
+  --header-height: 0;
+  --masthead-height: 0;
+  --nav-dropdown-top: 0;
+
+
+
+
+  // ***********************************
+  //  colors
+  // ***********************************
+  --c-primary: #CE2724;
+  --c-secondary: #9a0414;
+  --c-tertiary: #f5f0f0;
+  --c-black: #000;
+  --c-white: #fff;
+  --c-grey-100: #EFEFEF;
+  --c-grey-200: #BFBFBF;
+  --c-grey-300: #767676;
+  --c-grey-400: #626262;
+  --c-grey-500: #232323;
+
+
+
+
+  // ***********************************
+  //  Element Widths
+  // ***********************************
+  --w-large: 1920px;
+  --w-medium: 1680px;
+  --w-default: 1440px;
+  --w-small: 1240px;
+  --w-tiny: 680px;
+
+  .width-lg {
+    width: min(var(--w-large), 100%);
+  }
+
+  .width-md {
+    width: min(var(--w-medium), 100%);
+  }
+
+  .width-df {
+    width: min(var(--w-default), 100%);
+  }
+
+  .width-sm {
+    width: min(var(--w-small), 100%);
+  }
+
+  .width-xs {
+    width: min(var(--w-tiny), 100%);
+  }
+
+
+
+  // ***********************************
+  //  Transitions
+  // ***********************************
+  --t-fast: 0.3s;
+  --t-medium: 0.5s;
+  --t-slow: 1s;
+}
+// end :root
+
+
+
+
+// ***********************************
+//  Viewport Width Breakpoints (-160px)
+// ***********************************
+$vw-1100: 1760px;
+$vw-1000: 1600px;
+$vw-900: 1440px;
+$vw-800: 1360px;
+$vw-700: 1280px;
+$vw-600: 1120px;
+$vw-500: 1024px;
+$vw-400: 960px;
+$vw-300: 800px;
+$vw-200: 640px;
+$vw-100: 480px;
+
+
+
+
+// ***********************************
+//  Viewport Height Breakpoints
+// ***********************************
+$vh-300: 800px;
+$vh-200: 640px;

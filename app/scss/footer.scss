@@ -1,0 +1,263 @@
+// ***********************************
+//  Footer
+// ***********************************
+.footer {
+  width: 100%;
+  background-color: var(--c-grey-500);
+  color: var(--c-white);
+
+  h2 {
+    @extend %text-500;
+    line-height: 1;
+    color: var(--c-white);
+    margin-bottom: 0.5em;
+  }
+
+  a {
+    display: inline-block;
+    color: var(--c-white);
+    text-decoration: none;
+
+    &:after {
+      @extend %link-underline;
+    }
+
+    &:hover,
+    &:focus {
+      &:after {
+        @extend %link-underline--hover;
+      }
+    }
+  }
+
+  .button {
+    &:is(:hover, :focus) {
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+
+// ***********************************
+//  Footer Flex
+// ***********************************
+.footer__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+
+
+
+// ***********************************
+//  Container
+// ***********************************
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+// ***********************************
+//  Main
+// ***********************************
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 5em;
+
+  @media (max-width: $vw-700) {
+    flex-direction: column;
+    text-align: center;
+    gap: 3em;
+  }
+
+  @media (max-width: $vw-400) {
+    padding-block: 3em;
+  }
+}
+
+
+
+
+// ***********************************
+//  Address
+// ***********************************
+.footer__address {
+  @media (max-width: $vw-700) {
+    .icon {
+      justify-content: center;
+    }
+  }
+}
+
+
+
+
+// ***********************************
+//  Navigation
+// ***********************************
+.footer__nav {
+  ul {
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.5em;
+    column-gap: 3em;
+
+    @media (max-width: $vw-700) {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 380px;
+      margin-inline: auto;
+    }
+
+    @media (max-width: $vw-100) {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+    }
+  }
+}
+
+
+
+
+// ***********************************
+//  Social
+// ***********************************
+.footer__social {
+  .social {
+    display: flex;
+    margin: 0;
+
+    @media (max-width: $vw-700) {
+      justify-content: center;
+    }
+
+    a {
+      font-size: var(--fs-1000);
+      color: var(--c-white);
+      text-decoration: none;
+      transition: color var(--t-medium);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+
+      &:hover,
+      &:focus {
+        color: var(--c-primary);
+      }
+    }
+  }
+}
+
+
+
+
+// ***********************************
+//  Container
+// ***********************************
+.footer__quotes {
+  background-color: var(--c-black);
+  text-align: center;
+  padding-block: 5em;
+  border-bottom: 4px solid var(--c-grey-500);
+  overflow: hidden;
+
+  @media (max-width: $vw-400) {
+    padding-block: 3em;
+  }
+
+  figure {
+    display: none;
+    margin: 0;
+    margin-inline: auto;
+    position: relative;
+    width: fit-content;
+
+    &.quote__visible {
+      display: block;
+    }
+    
+    &:before, &:after {
+      position: absolute;
+      font-family: 'icons';
+      font-size: 8rem;
+      font-style: normal;
+      color: var(--c-white);
+      opacity: 0.1;
+    }
+
+    &:before {
+      content: "\E80B";
+      inset: 50% auto auto 0;
+      transform: translateY(-50%);
+    }
+    
+    &:after {
+        content: "\E80C";
+        inset: 50% 0 auto auto;
+        transform: translateY(-50%);
+    }
+  }
+  
+  blockquote {
+    font-size: clamp(var(--fs-400), 2vw, var(--fs-900));
+    font-style: italic;
+    margin-inline: auto;
+    margin-bottom: 0.5em;
+  }
+
+  figcaption {
+    color: var(--c-primary);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-semi-bold)
+  }
+}
+
+
+
+
+// ***********************************
+//  Links
+// ***********************************
+.footer__links {
+  background-color: var(--c-black);
+  text-align: center;
+  padding-block: 2em;
+
+  @media (max-width: $vw-400) {
+    padding-bottom: 6em;
+  }
+
+  @media (max-width: $vw-200) {
+    padding-bottom: 9em;
+  }
+
+  @media (max-width: $vw-400) {
+    background-color: var(--c-grey-500);
+  }
+}
+
+.footer__links__container {
+  span {
+    @media (max-width: $vw-100) {
+      display: none;
+    }
+  }
+
+  br {
+    display: none;
+
+    @media (max-width: $vw-100) {
+      display: block;
+    }
+  }
+}
